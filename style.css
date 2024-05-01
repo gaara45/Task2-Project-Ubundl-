@@ -1,0 +1,70 @@
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 35%;
+
+}
+body{
+    background-color: black;
+    color: white;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.Manual-l,
+.Manual-r{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.Manual-l:hover,.Manual-r:hover{
+    background-color: black;
+    color: white;
+}
+
+.Manual-l {
+    left: 0;
+}
+
+.Manual-r{
+    right: 0;
+}
+
+
+@media only screen and (max-width:800px) {
+    .product img{
+        width: 650px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .product img{
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
